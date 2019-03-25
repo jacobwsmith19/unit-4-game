@@ -1,0 +1,164 @@
+body {
+    background: url(../images/crystal.png);
+    background-size: cover;  
+}
+
+#container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#gameTitle {
+    font-size: 80px;
+    font-family: 'Bangers', cursive;
+    color: #1127f3;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#instructions {
+    
+    font-size: 22px;
+    color: black;
+    font-family: 'Dosis', sans-serif;
+    background-color: rgba(6, 247, 58, 0.295);
+    text-align: justify;
+    padding: 20px;
+    line-height: 20px;
+    width: 350px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-left: 23px;
+    float: left;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 22px;
+    font-family: 'Dosis', sans-serif;
+    color: black;
+    background-color: rgba(6, 247, 58, 0.295);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 160px;
+}
+
+.numbers {
+    font-size: 25px;
+    font-family: 'Dosis', sans-serif;
+    color: black;
+    background-color: #06b3f8;
+    text-align: center;
+    padding: 20px;
+    line-height: 20px;
+    width: 160px;
+}
+
+#numbersDisplay{
+    float: left;
+    overflow: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 23px;
+}
+
+#winsLossesDisplay{
+    float: left;
+    overflow: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 23px;  
+}
+
+#messageBox {
+    margin-top: 30px;
+    width: 402px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 22px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    clear: right;   
+}
+
+.crystalButtons {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    float: left;
+    clear: right;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+.btn {
+    margin: 1px;
+}
+
+footer {
+    height: 50px;
+}
+
+.footerContainer {
+    width: 100%;
+    background-color: #1127f3;
+    color: rgba(6, 247, 58, 0.596);
+    vertical-align: center;
+    text-align: center;  
+    font-size: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    line-height: 65px;
+    height: 40px;
+}
+
+/* media queries */
+
+/* large screen devices */
+@media only screen and (max-width: 980px) {
+    body {
+        background-size: cover;  
+    }
+    #container {
+        width: 100%;
+    }
+}
+
+/* medium screen devices */
+@media only screen and (max-width: 768px) {
+    #container {
+        width: 100%;
+    }
+    
+    #numbersDisplay, #winsLossesDisplay {
+        display: block;
+    }
+    
+    body {
+        background-size: cover;    
+    }
+}
+
+/* small screen devices */
+@media only screen and (max-width: 640px) {
+    body {
+        background-size: cover;  
+        
+    }
+}

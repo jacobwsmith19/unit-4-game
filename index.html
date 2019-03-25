@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- links stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <!-- links Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Dosis" rel="stylesheet">
+    <!-- links bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Jake's Crystal Collector Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
 </head>
+
 <body>
+    <div id="container">
+        
+        <!-- title box -->
+        <div id="gameTitle">Crystal Collector Game</div>
+
+        <!-- instructions box -->
+        <div id="instructions">
+            <p><strong>Instructions:</strong></p>
+            <p>Try to match the random number by clicking on the crystals.</p>
+            <p>Each crystal is worth a certain number of points.</p>
+            <p>If you can match the total exactly, you WIN!</p>
+            <p>If your score exceeds the random number, you LOSE.</p>
+            <p>The crystals will be worth different amounts of points each new game.</p>
+            <p>***If this is too easy, try doing it blindfolded!</p>
+        </div>
+
+        <!-- score and number box -->
+        <div id="numbersDisplay">
+            <div id="scoreTitle" class="title"><strong>Your score:</strong></div>
+            <div id="scoreNumber" class="numbers">0</div>
+            <div id="numberTitle" class="title"><strong>Number:</strong></div>
+            <div id="randomNumber" class="numbers">0</div>
+        </div>
+
+        <!-- wins and losses box -->
+        <div id="winsLossesDisplay">
+            <div id="winsTitle" class="title"><strong>Wins:</strong></div>
+            <div id="winsNumber" class="numbers">0</div>
+            <div id="lossesTitle" class="title"><strong>Losses:</strong></div>
+            <div id="lossesNumber" class="numbers">0</div>
+        </div>
+
+        <!-- message box -->
+        <div id="messageBox">Click a crystal to play the game!</div>
+        
+        <!-- buttons -->
+        <div class="crystalButtons">
+            <button id="crystalButton1" class="btn btn-default btn-lg"><img src="assets/images/geode1.png" alt="Button 1" width="60" height="60"/></button>
+            <button id="crystalButton2" class="btn btn-default btn-lg"><img src="assets/images/geode2.png" alt="Button 2" width="60" height="60"/></button>
+            <button id="crystalButton3" class="btn btn-default btn-lg"><img src="assets/images/geode3.png" alt="Button 3" width="60" height="60"/></button>
+            <button id="crystalButton4" class="btn btn-default btn-lg"><img src="assets/images/geode4.png" alt="Button 4" width="60" height="60"/></button>
+        </div> 
+
+    </div> <!-- closes container -->
+
+    <!-- footer -->
+    <footer class="footerContainer">
+        Copyright &copy 2019
+    </footer>
     
+    <!-- links jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- links javascript file -->
+    <script src="assets/javascript/game.js"></script> 
+
 </body>
 </html>
