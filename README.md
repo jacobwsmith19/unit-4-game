@@ -5,4 +5,4 @@ The computer will generate a random value for you. Try to get your score to equa
 
 Link to game: https://jacobwsmith19.github.io/unit-4-game/
 
-Link to portfolio:
+Link to portfolio: https://jacobwsmith19.github.io/Basic-Portfolio/
