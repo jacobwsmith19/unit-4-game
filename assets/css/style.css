@@ -33,6 +33,8 @@ body {
     float: left;
     border: 3px solid black;
     border-radius: 10px;
+    padding-top: 27px;
+    padding-bottom: 25px;
 }
 
 .title {
@@ -45,7 +47,7 @@ body {
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 160px;
+    width: 180px;
 }
 
 .numbers {
@@ -56,30 +58,30 @@ body {
     text-align: center;
     padding: 20px;
     line-height: 20px;
-    width: 160px;
+    width: 180px;
 }
 
-#numbersDisplay{
+#numbersDisplay, #numbersDisplay2 {
     float: left;
     overflow: auto;
     border: 3px solid black;
     border-radius: 10px;
     margin-top: 20px;
-    margin-left: 23px;
+    margin-right: 26px;
 }
 
-#winsLossesDisplay{
+#winsLossesDisplay, #winsLossesDisplay2 {
     float: left;
     overflow: auto;
     border: 3px solid black;
     border-radius: 10px;
     margin-top: 20px;
-    margin-left: 23px;  
+    margin-right: 26px;  
 }
 
 #messageBox {
-    margin-top: 30px;
-    width: 402px;
+    margin-top: 20px;
+    width: 401px;
     font-family: 'Dosis', sans-serif;
     font-size: 22px;
     border: 3px solid black;
@@ -112,13 +114,13 @@ body {
 
 footer {
     height: 50px;
+    vertical-align: center;
 }
 
 .footerContainer {
     width: 100%;
     background-color: #1127f3;
     color: rgba(6, 247, 58, 0.596);
-    vertical-align: center;
     text-align: center;  
     font-size: 15px;
     position: fixed;
@@ -158,7 +160,6 @@ footer {
 /* small screen devices */
 @media only screen and (max-width: 640px) {
     body {
-        background-size: cover;  
-        
+        background-size: cover;   
     }
 }

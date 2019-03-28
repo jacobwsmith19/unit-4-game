@@ -1,5 +1,5 @@
 
-// Global Variables --------------------------------------------------------------
+// GLOBAL VARIABLES --------------------------------------------------------------
 
 var wins = 0;
 var losses = 0;
@@ -9,10 +9,9 @@ var crystalValues = [0,0,0,0];
 var buttonName;
 
 
-// Functions ---------------------------------------------------------------------
+// FUNCTIONS ---------------------------------------------------------------------
 
 // generates random number
-
 function generateRandomNumber() {
     var min = 19;
     var max = 120;
@@ -21,7 +20,6 @@ function generateRandomNumber() {
 }
 
 // generates random values for the crystal buttons and stores them in the crystalValues array
-
 function generateRandomCrystals() {
     for (var i = 0; i < crystalValues.length; i++) {
         var min = 1;
@@ -31,14 +29,12 @@ function generateRandomCrystals() {
 }
 
 // resets user score to zero and populates scoreNumber div on the html page
-
 function resetUserScore() {
     score = 0;
     $("#scoreNumber").text(score);
 }
 
 // starts the game when user clicks a crystal button, adds button value to score, updates wins/losses
-
 function startGame() {
     $("#messageBox").text("Keep selecting crystals!");
 
@@ -81,7 +77,7 @@ function startGame() {
     }
 }
 
-// Start Game -----------------------------------------------------------------------
+// START GAME -----------------------------------------------------------------------
 
 generateRandomNumber();
 generateRandomCrystals();
